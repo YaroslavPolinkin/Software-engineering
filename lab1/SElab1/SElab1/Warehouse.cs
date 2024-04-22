@@ -1,0 +1,42 @@
+﻿using Microsoft.VisualBasic;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SElab1
+{
+    internal class Warehouse
+    {
+        public List<Product> products { get; set; }
+
+
+        public Warehouse(Product product)
+        {
+            this.products = new List<Product>();
+            products.Add(product);
+
+        }
+
+
+        public string DisplayProductInfo()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (Product product in products)
+            {
+                sb.Append(product.ProductName())
+                  .Append(" ")
+                  .Append(product.NowProductPrice())
+                  .Append(" ")
+                  .Append(product.quantity)
+                  .Append(" ")
+                  .Append(product.unitOfMeas)
+                  .Append(" ")
+                  .Append(product.data)
+                  .Append(" ");
+            }
+            return sb.ToString();
+        }
+    }
+}

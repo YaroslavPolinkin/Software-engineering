@@ -1,0 +1,15 @@
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.csproj.AssemblyReference.cache
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.GeneratedMSBuildEditorConfig.editorconfig
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.AssemblyInfoInputs.cache
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.AssemblyInfo.cs
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.csproj.CoreCompileInputs.cache
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\bin\Debug\net6.0\SElab1.exe
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\bin\Debug\net6.0\SElab1.deps.json
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\bin\Debug\net6.0\SElab1.runtimeconfig.json
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\bin\Debug\net6.0\SElab1.dll
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\bin\Debug\net6.0\SElab1.pdb
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.dll
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\refint\SElab1.dll
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.pdb
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\SElab1.genruntimeconfig.cache
+E:\2 курс\2 семестр\KPZ\Software-engineering\lab1\SElab1\SElab1\obj\Debug\net6.0\ref\SElab1.dll
