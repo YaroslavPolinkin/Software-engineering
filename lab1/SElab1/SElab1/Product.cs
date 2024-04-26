@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace SElab1
 {
-    internal class Product
+    public class Product
     {
-        private Money productPrice;
-        private string productName { get; set; }
+        private Money _productPrice;
+        private string _productName;
 
-        public string unitOfMeas { get; set; }
-        public int quantity { get; set; }
-        public DateTime data { get; set; }
+        public string _unitOfMeas { get;  }
+        public int _quantity { get; set; }
+        public DateTime _creationDate { get; }
 
         public Product(Money ProductPrice, string ProductName, string unitOfMeas, int quantity)
         {
-            productPrice = ProductPrice;
-            productName = ProductName;
-            this.unitOfMeas = unitOfMeas;
-            this.quantity = quantity;
-            data = DateTime.Now; 
+            _productPrice = ProductPrice;
+            _productName = ProductName;
+            _unitOfMeas = unitOfMeas;
+            _quantity = quantity;
+            _creationDate = DateTime.Now; 
 
         }
 
@@ -29,19 +29,19 @@ namespace SElab1
         //methods
         public void Discount(int intPart, int doublePart)
         {
-            intPart = productPrice.intPart - intPart;
-            doublePart = productPrice.doublePart - doublePart;
-            productPrice.ChangeValue(intPart, doublePart);
+     
+
+            _productPrice.Subtract(intPart, doublePart);
         }
 
         public string NowProductPrice()
         {
-            return productPrice.ShowBalance();
+            return _productPrice.ShowBalance();
         }
 
         public string ProductName()
         {
-            return productName;
+            return _productName;
         }
 
 

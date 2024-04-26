@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SElab1
 {
-    internal class Reporting
+    public class Reporting
     {
         private Warehouse inventory;
 
@@ -31,11 +31,11 @@ namespace SElab1
             {
                 if(el.ProductName == product.ProductName)
                 {
-                    if (el.quantity >= quantity) {
-                        el.quantity -= quantity;
-                        return $"кількість {product.ProductName()} тепер {el.quantity}";
+                    if (el._quantity >= quantity) {
+                        el._quantity -= quantity;
+                        return $"кількість {product.ProductName()} тепер {el._quantity}";
                     }
-                    else return $"наявна кількість {el.quantity}";
+                    else return $"наявна кількість {el._quantity}";
 
                 }
             }
@@ -49,8 +49,8 @@ namespace SElab1
             {
                 if (el.ProductName == product.ProductName)
                 {
-                    el.quantity += quantity;
-                    return $"кількість {product.ProductName} тепер {el.quantity}";
+                    el._quantity += quantity;
+                    return $"кількість {product.ProductName} тепер {el._quantity}";
                 }
             }
             return "помилка!";
@@ -64,9 +64,9 @@ namespace SElab1
             {
                 sb.Append(product.ProductName())
                   .Append(" ")
-                  .Append(product.quantity)
+                  .Append(product._quantity)
                   .Append(" ")
-                  .Append(product.unitOfMeas)
+                  .Append(product._unitOfMeas)
                   .Append(" ");
 
             }

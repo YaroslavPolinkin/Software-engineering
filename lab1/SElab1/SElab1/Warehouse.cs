@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SElab1
 {
-    internal class Warehouse
+    public class Warehouse
     {
         public List<Product> products { get; set; }
 
@@ -29,11 +29,11 @@ namespace SElab1
                   .Append(" ")
                   .Append(product.NowProductPrice())
                   .Append(" ")
-                  .Append(product.quantity)
+                  .Append(product._quantity)
                   .Append(" ")
-                  .Append(product.unitOfMeas)
+                  .Append(product._unitOfMeas)
                   .Append(" ")
-                  .Append(product.data)
+                  .Append(product._creationDate)
                   .Append(" ");
             }
             return sb.ToString();

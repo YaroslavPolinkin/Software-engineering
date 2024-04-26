@@ -6,43 +6,59 @@ using System.Threading.Tasks;
 
 namespace SElab1
 {
-    internal class Money
+    public class Money
     {
-        public int intPart { get; set; }
-        public int doublePart { get; set; }
+        private int _intPart;
+        private int _doublePart;
 
         public Money(int intPart, int doublePart)
         {
-            this.intPart = intPart;
-            this.doublePart = doublePart;
-         
+            _doublePart = doublePart;
+            _intPart = intPart;
+
+            NormalizeBalance();
+
         }
   
 
         //methods
-        public void ChangeValue(int IntPart, int DoublePart)
+        public void Add(int IntPart, int doublePart)
         {
+            _doublePart += doublePart;
+            _intPart += IntPart;
 
-            intPart = IntPart;
-            doublePart = DoublePart;
+            NormalizeBalance();
+        }
 
-            while (doublePart >= 100)
+        public void Subtract(int IntPart, int doublePart)
+        {
+            _doublePart -= doublePart;
+            _intPart -= IntPart;
+
+            NormalizeBalance();
+
+        }
+
+
+        private void NormalizeBalance()
+        {
+            while (_doublePart >= 100)
             {
-                doublePart -= 100;
-                intPart++;
+                _doublePart -= 100;
+                _intPart++;
             }
 
-            while (doublePart < 0)
+            while (_doublePart < 0)
             {
-                doublePart += 100;
-                intPart--;
+                _doublePart += 100;
+                _intPart--;
             }
-
         }
 
         public string ShowBalance()
         {
-            return intPart + "," + doublePart;
+
+            return $"{_intPart},{_doublePart:D2}";
         }
 
 
